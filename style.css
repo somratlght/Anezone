@@ -1,0 +1,17 @@
+:root {
+  --green: #1b9a57;
+  --red: #d62828;
+  --bg: #ffffff;
+  --muted: #666;
+}
+body { font-family: Arial, sans-serif; background: var(--bg); color:#111; margin:0; padding:0;}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#fff;border-bottom:1px solid #eee;}
+.logo img{vertical-align:middle}
+.brand{font-weight:700;margin-left:8px;color:var(--green)}
+.container{padding:20px}
+.hero{background:#f7fff7;padding:20px;border-radius:6px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.product{border:1px solid #eee;padding:12px;border-radius:6px;background:#fff}
+.product img{width:100%;height:140px;object-fit:cover}
+.price{color:var(--red);font-weight:700}
+.footer{padding:16px;text-align:center;color:var(--muted);font-size:14px;margin-top:24px;border-top:1px solid #eee}

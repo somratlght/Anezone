@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="bn">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>সেলার KYC — Anezone</title>
+<link rel="stylesheet" href="../../assets/css/style.css"></head>
+<body>
+<h1>সেলার রেজিস্ট্রেশন (KYC)</h1>
+<form action="../../backend/routes/sellers.js" method="post" enctype="multipart/form-data">
+  <label>দোকানের নাম: <input name="storeName" required></label><br>
+  <label>মালিকের নাম: <input name="ownerName" required></label><br>
+  <label>মোবাইল: <input name="phone" required></label><br>
+  <label>NID স্ক্যান: <input type="file" name="nidUpload" accept=".jpg,.png,.pdf"></label><br>
+  <label>বিজনেস টাইপ:
+    <select name="businessType"><option>একক মালিকানাধীন</option><option>প্রাইভেট লিমিটেড</option></select>
+  </label><br>
+  <label><input type="checkbox" required> টার্মস ও কন্ডিশন মেনে নিচ্ছি</label><br>
+  <button type="submit">সাবমিট</button>
+</form>
+</body>
+</html>

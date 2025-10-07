@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="bn">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>চেকআউট — Anezone</title>
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body>
+<h1>চেকআউট</h1>
+<form id="checkoutForm" action="../backend/routes/payments.js" method="post">
+  <label>নাম: <input name="name" required></label><br>
+  <label>মোবাইল: <input name="phone" required></label><br>
+  <label>ঠিকানা: <textarea name="address" required></textarea></label><br>
+  <label>কুরিয়ার নির্বাচন:
+    <select name="courier">
+      <option>Pathao</option>
+      <option>Paperfly</option>
+      <option>Steadfast</option>
+      <option>RedX</option>
+    </select>
+  </label><br>
+  <label>পেমেন্ট পদ্ধতি:
+    <select name="payment">
+      <option>bKash</option>
+      <option>Nagad</option>
+      <option>COD</option>
+    </select>
+  </label><br>
+  <button type="submit">পেমেন্ট করুন</button>
+</form>
+</body>
+</html>
